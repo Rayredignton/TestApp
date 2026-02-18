@@ -3,18 +3,40 @@
 =======
 # pawltest
 
-A new Flutter project.
+Offline Support
+Products are cached locally using Hive
 
-## Getting Started
+App works offline with cached data
 
-This project is a starting point for a Flutter application.
+Automatic fallback to local database when network is unavailable
 
-A few resources to get you started if this is your first Flutter project:
+Infinite Scroll
+Loads 10 products at a time
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Automatically fetches more when scrolling to bottom
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> 1a885e5 (test)
+Works with both online and offline modes
+
+Cart Management
+Add/remove items from cart
+
+Update quantities
+
+Persistent storage across app restarts
+
+Real-time cart total calculation
+
+Running the app
+
+flutter pub get
+
+flutter pub run build_runner build --delete-conflicting-outputs
+
+flutter run
+
+
+Building the app
+
+flutter build apk --release
+
+
